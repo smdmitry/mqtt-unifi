@@ -52,7 +52,7 @@ unifi.on('update', (site, client, state) => {
 	const topic = topics.update({
 		siteName: site.name,
 		siteDescription: site.desc,
-		name: client.name,
+		name: client.name ? client.name : client.mac,
 		mac: client.mac,
 	});
 
