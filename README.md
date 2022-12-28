@@ -9,7 +9,7 @@ version: '3'
 services:
 
   unifi:
-    image: 2mqtt/unifi:0.0.6
+    build: https://github.com/smdmitry/mqtt-unifi.git
 
     restart: always
 
